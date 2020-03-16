@@ -5,7 +5,7 @@ An Example Repo for microverse Projects path as a mockup of New-York Times artic
 
 Screenshot of Page
 
-![screenshot 1]("images/project-screenshot.png") 
+![screenshot 1](images\project-screenshot.png) 
 
 
 ## Built With

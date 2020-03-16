@@ -26,27 +26,12 @@ a {
   display: inline-block;
 }
 
-.group::before,
-.group::after {
-  content: " ";
-  display: table;
-}
-
-.group::after {
-  clear: both;
-}
-
-.group {
-  clear: both;
-  zoom: 1;
-}
-
 #glob-nav-header {
   height: 36px;
   position: absolute;
   left: 0;
   right: 0;
-  top: 10%;
+  top: 8%;
   margin: 0 auto;
 }
 
@@ -142,13 +127,6 @@ a {
   align-items: stretch;
 }
 
-/* .glob-nav-items .icon {
-  flex: 1;
-  display: flex;
-  align-items: stretch;
-  align-content: center; 
-}*/
-
 .hero {
   background: url(images/hero_verse.jpg) no-repeat 50% 100%;
   -webkit-background-size: cover;
@@ -160,6 +138,35 @@ a {
   width: 100vw;
 }
 
+.article-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  left: 0;
+}
+
+.article-header .main-title {
+  font-size: 24px;
+  height: 104px;
+  line-height: 36px;
+}
+
+.article-header .sub-title {
+  height: 82px;
+  margin-bottom: 27pt;
+}
+
+.article-header .cta {
+  height: 31px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
 .aside-content {
   display: flex;
   margin: 0 auto;
@@ -169,7 +176,6 @@ a {
 .aside-content > a {
   flex: 1;
   display: flex;
-  border: 2px solid rebeccapurple;
 }
 
 .aside-content img {
@@ -177,7 +183,6 @@ a {
 }
 
 .page-footer {
-  z-index: 1;
   right: 0;
   left: 0;
   margin: 0;
@@ -188,28 +193,15 @@ a {
   color: #6e6e6e;
   font-size: 0.8334em;
   line-height: 1.2;
-  text-align: center;
-  zoom: 1;
 }
 
 .footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 auto;
   width: 70%;
   padding: 1em 0 2.6em;
-}
-
-.page-footer .left {
-  float: left;
-  width: auto;
-  padding-top: 1.5em;
-  text-align: left;
-}
-
-.page-footer .right {
-  float: right;
-  width: auto;
-  padding-top: 1.5em;
-  text-align: right;
 }
 
 .footer-nav {
@@ -221,4 +213,12 @@ a {
   margin-left: 0.6em;
   padding-left: 0.6em;
   border-left: 1px solid #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+.glob-search-field:focus {
+  background-color: white;
 }

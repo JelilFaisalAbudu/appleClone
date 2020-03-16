@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #08c;
+  display: inline-block;
+}
+
+.group::before,
+.group::after {
+  content: " ";
+  display: table;
+}
+
+.group::after {
+  clear: both;
+}
+
+.group {
+  clear: both;
+  zoom: 1;
+}
+
+#glob-nav-header {
+  height: 36px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10%;
+  margin: 0 auto;
+}
+
+.navbar {
+  background: linear-gradient(rgba(117, 116, 117, 1) 0%, rgba(104, 108, 108, 1) 35%, rgba(84, 88, 88, 1) 50%, rgba(72, 73, 73, 1) 72%, rgba(135, 139, 140, 1) 100%);
+  display: flex;
+  align-items: stretch;
+  border-radius: 4px;
+  margin: 0 20%;
+  height: inherit;
+}
+
+.glob-nav {
+  flex: 5;
+  display: flex;
+  align-items: stretch;
+  text-align: center;
+}
+
+.glob-nav-items .icon {
+  background: url("images/globalnav_text.png") no-repeat 50% 2px;
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  align-content: center;
+  text-indent: -999999px;
+}
+
+.glob-nav-items .store {
+  background-position: 50% 13%;
+}
+
+.glob-nav-items .mac {
+  background-position: 50% 27%;
+}
+
+.glob-nav-items .ipod {
+  background-position: 50% 42%;
+}
+
+.glob-nav-items .iphone {
+  background-position: 50% 57%;
+}
+
+.glob-nav-items .ipad {
+  background-position: 50% 71%;
+}
+
+.glob-nav-items .itunes {
+  background-position: 50% 86%;
+}
+
+.glob-nav-items .support {
+  background-position: 50% 100%;
+}
+
+.glob-search-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: inherit;
+  flex: 1;
+  margin: 0 18px;
+}
+
+.glob-search-field {
+  background-color: gray;
+  padding-left: 22px;
+  border-radius: 15px;
+  outline: none;
+  width: 80%;
+}
+
+.glob-search-form .fa-search {
+  color: white;
+  font-size: 14px;
+  position: relative;
+  left: 20px;
+  height: 14px;
+  width: 15px;
+  opacity: transparent;
+}
+
+.glob-nav-items {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+}
+
+.glob-nav-items .glob-nav-item {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+}
+
+/* .glob-nav-items .icon {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  align-content: center; 
+}*/
+
+.hero {
+  background: url(images/hero_verse.jpg) no-repeat 50% 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-origin: border-box;
+  height: 530px;
+  width: 100vw;
+}
+
+.aside-content {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.aside-content > a {
+  flex: 1;
+  display: flex;
+  border: 2px solid rebeccapurple;
+}
+
+.aside-content img {
+  flex: 1;
+}
+
+.page-footer {
+  z-index: 1;
+  right: 0;
+  left: 0;
+  margin: 0;
+  min-width: 70%;
+  width: 100%;
+  height: 90px;
+  padding: 0;
+  color: #6e6e6e;
+  font-size: 0.8334em;
+  line-height: 1.2;
+  text-align: center;
+  zoom: 1;
+}
+
+.footer-wrapper {
+  margin: 0 auto;
+  width: 70%;
+  padding: 1em 0 2.6em;
+}
+
+.page-footer .left {
+  float: left;
+  width: auto;
+  padding-top: 1.5em;
+  text-align: left;
+}
+
+.page-footer .right {
+  float: right;
+  width: auto;
+  padding-top: 1.5em;
+  text-align: right;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: stretch;
+}
+
+.page-footer .right .pad-left {
+  margin-left: 0.6em;
+  padding-left: 0.6em;
+  border-left: 1px solid #ccc;
+}

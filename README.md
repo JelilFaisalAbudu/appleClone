@@ -5,7 +5,7 @@ An Example Repo for microverse Projects path as a mockup of New-York Times artic
 
 Screenshot of Page
 
-![screenshot 1](images\project-screenshot.png) 
+![screenshot 1](images/project-screenshot.png) 
 
 
 ## Built With
@@ -16,7 +16,7 @@ Screenshot of Page
 - Flexbox
 - Linter validator
 
-[Live Demo Link]()
+[Live Demo Link](https://raw.githack.com/JelilFaisalAbudu/appleClone/homepage/index.html)
 
 ## About
 An Example Repo for microverse Projects path as a mockup of [Old Apple site homepage](https://web.archive.org/web/20140301004610/http://www.apple.com/). 

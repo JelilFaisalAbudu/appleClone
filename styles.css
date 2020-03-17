@@ -52,6 +52,9 @@ a {
 }
 
 .glob-nav-items .icon {
+  border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: rgb(131, 132, 133);
   background: url("images/globalnav_text.png") no-repeat 50% 2px;
   flex: 1;
   display: flex;
@@ -135,7 +138,7 @@ a {
   background-size: cover;
   background-origin: border-box;
   height: 530px;
-  width: 100vw;
+  width: 100%;
 }
 
 .article-header {
@@ -169,17 +172,39 @@ a {
 
 .aside-content {
   display: flex;
-  margin: 0 auto;
-  width: 100%;
+  align-items: stretch;
+  width: inherit;
 }
 
-.aside-content > a {
+.aside-content .promo {
   flex: 1;
   display: flex;
+  align-items: stretch;
+  height: 200px;
 }
 
-.aside-content img {
+.promo-iphone5s {
   flex: 1;
+  background: url("images/promo_iphone5s.jpg") no-repeat;
+  background-size: cover;
+}
+
+.promo-iphone5c {
+  flex: 1;
+  background: url("images/promo_iphone5c.jpg") no-repeat;
+  background-size: cover;
+}
+
+.promo-30-years {
+  flex: 1;
+  background: url("images/promo_30_years.jpg") no-repeat;
+  background-size: cover;
+}
+
+.promo-supplier-res {
+  flex: 1;
+  background: url("images/promo_supplier_responsibility.jpg") no-repeat;
+  background-size: cover;
 }
 
 .page-footer {
@@ -221,4 +246,8 @@ a {
 
 .glob-search-field:focus {
   background-color: white;
+}
+
+.glob-nav-items .icon:hover {
+  background-color: gray;
 }
